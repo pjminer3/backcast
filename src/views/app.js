@@ -13,8 +13,8 @@ var AppView = Backbone.View.extend({
     // reassigns el's html via the $el.html(...)
     this.$el.html(this.template());
     new SearchView({ el: '.search' }).render();
-    new VideoPlayerView({ el: this.$('.player') }).render();
-    new VideoListView({ el: this.$('.list'), collection: this.videos }).render();
+    new VideoPlayerView({ el: ('.player') }).render();
+    new VideoListView({ el: ('.list'), collection: this.videos }).render();
     return this;
   },
 
