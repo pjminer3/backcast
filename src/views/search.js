@@ -1,9 +1,9 @@
 var SearchView = Backbone.View.extend({
 
-  el: ".search",
+  // el: ".search",
 
   initialize: function() {
-    this.render();
+    // this.render();
   },
 
   render: function() {

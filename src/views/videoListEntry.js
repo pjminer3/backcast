@@ -1,9 +1,11 @@
 var VideoListEntryView = Backbone.View.extend({
 
-  el: ".video-list",
 
   initialize: function() {
-    this.render();
+    // window.exampleVideoData.forEach(video => {
+    //   let video = new Videos();
+    //   video.render();
+    // });
   },
 
   render: function() {
