@@ -2,13 +2,11 @@ var VideoListEntryView = Backbone.View.extend({
 
 
   initialize: function() {
-    // window.exampleVideoData.forEach(video => {
-    //   let video = new Videos();
-    //   video.render();
-    // });
+   // Add stuff once we get things working
   },
 
   render: function() {
+    console.log('Does this render? yes it does');
     this.$el.html(this.template(this.model.attributes));
     return this;
   },

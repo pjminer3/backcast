@@ -1,19 +1,19 @@
 var VideoListView = Backbone.View.extend({
 
-  // el: ".list",
 
   initialize: function() {
-    // this.render();
+    
   },
 
   render: function() {
     this.$el.children().detach();
     this.$el.html(this.template());
 
-    // loop over data, creating new videoListEntries from the html
-    window.exampleVideoData.forEach(video => {
-      var newVid = new VideoListEntryView(video);
-      $('.video-list').append(newVid.render());
+    this.collection.forEach(video => {
+      debugger;
+      console.log(video); // THIS IS THE MODEL~!!111111`
+      var videoEntry = (new VideoListEntryView({model: video})).render().$el;
+      $('.video-list').append(videoEntry);
     });
 
     return this;
